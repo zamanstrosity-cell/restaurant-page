@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+#content {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: 25px solid hsl(54, 100%, 50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: normal;
+    padding: 30px 35px 30px 35px;
+    height: 100px;
+}
+
+@media screen and (max-width: 768px){
+    .header {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+    .header > .right {
+        flex-direction: column;
+    }
+}
+
+.header > .left{
+    text-align: left;
+}
+
+.header > .right, .header > .left {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    line-height: 1em;
+    padding: 10px;
+    letter-spacing: 0.2em;
+    text-align: right;
+}
+
+.nav-item {
+    margin: 1em;
+    display: inline-block;
+}
+.header > * {
+    font-size: 10px;
+    gap: normal;
+    line-height: 14px;
+    margin: 0px 8.652px;
+    font-weight: 600;
+    padding: 8.652px 0px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.middle {
+    max-width: 145px;
+}
+#logo {
+    width: 100%;
+}
