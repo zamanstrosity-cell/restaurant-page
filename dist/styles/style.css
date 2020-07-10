@@ -201,6 +201,7 @@ body {
 }
 
 
+
 .item-title {
     width:100%;
     font-size: 40px;
@@ -219,7 +220,7 @@ body {
     width: 40%;
     margin-left: 0;
     padding-bottom: 76px;
-    height: 50px;
+    height: 120px;
 }
 @media screen and (max-width: 1024px){
     .menu-item {
@@ -376,4 +377,97 @@ body {
 #submit-form:hover {
     background-color: black;
     color: #ffffff;
+}
+
+
+#introduction {
+    margin: auto;
+    margin-top: 120px;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #introduction {
+        width: 80%;
+    }
+}
+
+#introduction > h2 {
+    font-size: 45px;
+    line-height: 1.68;
+    font-weight: 600;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+}
+#noodles-image, #spread-noodles, #cooking-noodles {
+    margin-top: 110px;
+    width: 90%;
+    margin-bottom: 110px;
+}
+
+#food-plate {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 30%;
+}
+
+#the-beginning {
+    margin-top: 110px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side > h4{
+    font-size: 18px;
+    gap: normal;
+    letter-spacing: .54px;
+    line-height: 39.6px;
+    margin: 0px 0px 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.left-side > h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 69px;
+    margin: 38.18px 0px;
+    text-align: center;
+}
+
+.right-side > p {
+    font-size: 18px;
+    gap: normal;
+    letter-spacing: 0.54px;
+    line-height: 39px;
+    margin: 0px 0px 18px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.map {
+    margin-top: 140px;
+    margin-bottom: 100px;
+    width: 90%;
+}
+
+.map > iframe {
+    width: 100%;
 }

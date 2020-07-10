@@ -1,5 +1,8 @@
-<div class="home">
-            <div class="intro">
+const Home = () => {
+    const homePage = document.createElement('div');
+    homePage.classList.add('home');
+    homePage.innerHTML = `
+    <div class="intro">
                 <h1 class="title">
                     555 Wellington St. <br> Hong Kong
                 </h1>
@@ -11,4 +14,8 @@
                     <br>Every day
                 </h1>
             </div>
-        </div>
+    `
+    return homePage;
+}
+
+export default Home;

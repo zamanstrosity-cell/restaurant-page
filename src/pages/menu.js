@@ -1,5 +1,8 @@
-<div class="menu">
-<div class="item-section">
+const Menu = () => {
+    const menuPage = document.createElement('div');
+    menuPage.classList.add('menu');
+    menuPage.innerHTML = `
+    <div class="item-section">
     <h2 class="item-title">SMALL PLATES</h2>
     <div class="items-of-menu">
         <div class="menu-item">
@@ -159,4 +162,8 @@
     <div class="item-description">Black tea with bergamot</div>
 </div>
 </div>
-</div>
+    `
+    return menuPage;
+}
+
+export default Menu;
