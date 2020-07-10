@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+* {
+    font-family: 'Roboto Mono', monospace;
+}
 
 body {
     height: 100%;
@@ -16,9 +19,11 @@ body {
     flex-direction: column;
     padding: 20px 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .header {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -46,6 +51,9 @@ body {
     max-width: 200px;
 }
 
+.header > .left {
+    margin-left: 0;
+}
 
 .header > .right {
     justify-self: flex-end;
@@ -62,6 +70,7 @@ body {
 }
 
 .nav-item:hover, .link-item:hover {
+    text-decoration: none;
     color: rgb(136, 133, 133);
 }
 .header > * {
@@ -151,11 +160,17 @@ body {
     .intro {
         width: 66.66667%
     }
+    .reservation {
+        width: 66.66667%;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .intro, .links-contact {
         width: 83.33333%
+    }
+    .reservation {
+        width: 83.33333%;
     }
 }
 
@@ -163,21 +178,26 @@ body {
 .menu {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
 }
 
 
 .item-section {
-    width: 100%;
+    width: 80%;
     padding: 107px 36px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border: solid;
 }
 
 .items-of-menu {
     width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 
@@ -187,28 +207,173 @@ body {
     font-weight: 600;
     gap: normal;
     line-height: 69px;
-    padding-left: 10px;
+    padding-left: 0;
+    margin-left: 0;
     margin-bottom: 40px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 67px 0px 67px;
+    width: 40%;
+    margin-left: 0;
+    padding-bottom: 76px;
+    height: 50px;
 }
 @media screen and (max-width: 1024px){
     .menu-item {
         width: 100%;
     }
 }
-.menu-item {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 67px 0px 67px;
-    width: 40%;
-    padding-bottom: 36px;
-}
-
 .item-header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .item-header, .item-description {
     width: 100%;
     text-align: left;
+}
+
+.item-name {
+    font-size: 17.8px;
+    font-weight: 900;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+.reservations-header {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 107px;
+}
+
+.reservations-header > h1 {
+    font-size: 50px;
+    gap: normal;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+
+.reservations-header > p {
+    width: 60%;
+    align-self: center;
+    font-size: 18px;
+    gap: normal;
+    letter-spacing: 0.54px;
+    font-weight: 500;
+    line-height: 38px;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.reservation-form {
+    width: 50%;
+}
+
+.reservation-form > * {
+    margin: 10px 10px;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+#name > .col > label {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.enter-email > input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+.enter-number {
+    display: flex;
+    flex-direction: column;
+}
+
+.enter-number > input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+.enter-number > * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.enter-number > small {
+    margin-top: 3px;
+    font-size: 10px;
+}
+
+#special-requests {
+    width: 100%;
+}
+.date-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field-date {
+    width: 100%;
+    max-width: 100px;
+    height: 40px;
+    padding: 10px;
+}
+
+.date-field {
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+.size-of-party {
+    display: flex;
+    flex-direction: column;
+}
+
+.size-of-party > select {
+    max-width: 30px;
+}
+
+.time-of-res {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-of-res > select {
+    max-width: 70px;
+}
+
+#submit-form {
+    background: #ffffff;
+    color: hsl(0. 0%, 7%);
+    border: 2px solid black;
+    font-size: 14px;
+    height: 48px;
+    width: 140px;
+    transition: ease-in-out 178ms;
+}
+
+#submit-form:hover {
+    background-color: black;
+    color: #ffffff;
 }
