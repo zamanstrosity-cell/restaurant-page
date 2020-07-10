@@ -10,7 +10,7 @@ const Location = () => {
                     555 Wellington St. <br> Central, HK <br> + 852 1234 5678
                 </h1>
                 <div class="welcome-image">
-                    <img src="../src/assets/empty-logo.png" alt="Empty Logo" id="empty-logo"/>
+                    <img src="./assets/empty-logo.png" alt="Empty Logo" id="empty-logo"/>
                 </div>
                 <h1 class="hours">
                     12:00 to 0:00

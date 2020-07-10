@@ -9,7 +9,7 @@ const Chef = () => {
     </h2>
 </div>
 <div class="row image-div">
-    <img src="../src/assets/noodles.jpeg" alt="Noodles" id="noodles-image">
+    <img src="./assets/noodles.jpeg" alt="Noodles" id="noodles-image">
 </div>
 <div class="row" id="the-beginning">
     <div class="col left-side">
@@ -26,7 +26,7 @@ const Chef = () => {
     </div>
 </div>
 <div class="row image-div">
-    <img src="../src/assets/spread-noodles.jpeg" alt="Spread Noodles" id="spread-noodles">
+    <img src="./assets/spread-noodles.jpeg" alt="Spread Noodles" id="spread-noodles">
 </div>
 <div class="row">
     <div class="col left-side" id="the-first-venture">
@@ -44,7 +44,7 @@ const Chef = () => {
     </div>
 </div>
         <div class="row image-div">
-            <img src="../src/assets/slide2.jpg" alt="Cooking Noodles" id="cooking-noodles">
+            <img src="./assets/slide2.jpg" alt="Cooking Noodles" id="cooking-noodles">
         </div>
         <div class="row">
             <div class="col left-side" id="a-new-challenge">
@@ -62,7 +62,7 @@ const Chef = () => {
             </div>
         </div>
         <div class="row image-div">
-            <img src="../src/assets/menu-plate.jpeg" alt="Plate of food" id="food-plate">
+            <img src="./assets/menu-plate.jpeg" alt="Plate of food" id="food-plate">
         </div>
     `
     return chefInfo;

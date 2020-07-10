@@ -8,7 +8,7 @@ const Header = () => {
                 <a href="#" class="nav-item" data-go-to-chef>Chef</a>
             </div>
             <div class="middle">
-                <img src="../src/assets/logo.png" alt="Chotto Motto Logo" id="logo">
+                <img src="./assets/logo.png" alt="Chotto Motto Logo" id="logo">
             </div>
             <div class="right">
                 <a href="#" class="nav-item" data-go-to-reservations>Reservations</a>
