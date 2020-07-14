@@ -268,7 +268,7 @@ body {
 
 
 .on-right {
-    transform: translateX(calc(100% + 25vw))
+    transform: translateX(calc(100% + 20vw))
 }
 
 
@@ -673,6 +673,9 @@ body {
     width: 100%;
 }
 @media only screen and (max-width: 640px){
+    * {
+        overflow-x: hidden;
+    }
     body {
         margin: 0;
         padding: 0;
@@ -790,6 +793,6 @@ body {
 
 @media only screen and (max-width: 400px){
     #content {
-        width: 400px;
+        width: 375px;
     }
 }
