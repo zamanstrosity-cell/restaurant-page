@@ -12,12 +12,12 @@ const Chef = () => {
     <img src="./assets/noodles.jpeg" alt="Noodles" id="noodles-image">
 </div>
 <div class="row" id="the-beginning">
-    <div class="col-lg-6 col-md-6 col-sm-12 left-side">
+    <div class="col-lg-6 col-sm-12 left-side">
         <h4>SAPPORO, JP</h4>
         <h2>The Beginning</h2>
         <h4>1972</h4>
     </div>
-    <div class="col col-sm-12 right-side">
+    <div class="col-lg-6 col-sm-12 right-side">
         <p>Daichi Sakamoto started cooking at age five, helping his mother prepare bentos for his father, younger sister, and himself. Chashu was never a missing component. Mother Sakamoto had learned how to make it when she studied abroad in Hong Kong. It was young Chef Sakamoto who mixed the marinade, a formula he perfected as he grew into his teens.
         <br>
         <br>
@@ -29,12 +29,12 @@ const Chef = () => {
     <img src="./assets/spread-noodles.jpeg" alt="Spread Noodles" id="spread-noodles">
 </div>
 <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 left-side" id="the-first-venture">
+    <div class="col-lg-6 col-sm-12 left-side" id="the-first-venture">
         <h4>TOKYO, JP</h4>
         <h2>The First Venture</h2>
         <h4>1998</h4>
     </div>
-    <div class="col col-sm-12 right-side">
+    <div class="col-lg-6 col-sm-12 right-side">
         <p>
             After saving his wages from the Nagano apprenticeship, Chef Sakamoto took out a loan and opened Chotto Kai, his first restaurant in Tokyo. Using simple, seasonal ingredients, he was able to bring the luxury of kaiseki to all. Because he incorporated some of the Hong Kong flavors his mother had inspired in him, Chotto Kai was both a huge success and a unique contribution to Tokyo’s culinary landscape.
         </p>
