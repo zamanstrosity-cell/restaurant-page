@@ -1,6 +1,7 @@
 import 'bootstrap';
 import './scss/app.scss';
 import Header from './pages/header';
+import { mobileHeader, mobileNav } from './pages/mobile';
 import Footer from './pages/footer'
 import Home from './pages/home';
 import Menu from './pages/menu';
@@ -8,80 +9,64 @@ import Chef from './pages/chef';
 import Reservations from './pages/reservations';
 import Location from './pages/location';
 
+const body = document.querySelector("body");
 
-let mainPage = document.getElementById('content');
-
-const toggleMainPage = () => {
-    mainPage.innerHTML = '';
+const togglePage = (element) => {
+    body.innerHTML = '';
+    const mainPage = document.createElement('div');
+    mainPage.setAttribute('id', 'content');
+    body.appendChild(mainPage);
+    body.insertBefore(mobileHeader(), mainPage);
     mainPage.appendChild(Header());
-    mainPage.appendChild(Home());
+    mainPage.appendChild(element());
     mainPage.appendChild(Footer());
+    mainPage.appendChild(mobileNav());
     addEventListeners();
 }
 
-const toggleMenuPage = () => {
-    mainPage.innerHTML = '';
-    mainPage.appendChild(Header());
-    mainPage.appendChild(Menu());
-    mainPage.appendChild(Footer());
-    addEventListeners();
-}
 
-const toggleChefPage = () => {
-    mainPage.innerHTML = '';
-    mainPage.appendChild(Header());
-    mainPage.appendChild(Chef());
-    mainPage.appendChild(Footer());
-    addEventListeners();
-}
-
-const toggleReservationsPage = () => {
-    mainPage.innerHTML = '';
-    mainPage.appendChild(Header());
-    mainPage.appendChild(Reservations());
-    mainPage.appendChild(Footer());
-    addEventListeners();
-}
-
-const toggleLocationPage = () => {
-    mainPage.innerHTML = '';
-    mainPage.appendChild(Header());
-    mainPage.appendChild(Location());
-    mainPage.appendChild(Footer());
-    addEventListeners();
-}
 
 
 const addEventListeners = () => {
-    const homeButton = document.querySelector('[data-go-to-home]');
-    homeButton.onclick = () => {
-        toggleMainPage();
+    const homeButtons = document.querySelectorAll('[data-go-to-home]');
+    homeButtons.forEach( button => {
+        button.onclick = () => {
+        togglePage(Home);
     }
+    });
     const menuButtons = document.querySelectorAll('[data-go-to-menu]');
     menuButtons.forEach(button => {
         button.onclick = () => {
-            toggleMenuPage();
+            togglePage(Menu);
         }
-    })
+    });
     const chefButtons = document.querySelectorAll('[data-go-to-chef]');
     chefButtons.forEach(button => {
         button.onclick = () => {
-            toggleChefPage();
+            togglePage(Chef);
         }
     });
     const reservationButtons = document.querySelectorAll('[data-go-to-reservations]');
     reservationButtons.forEach(button => {
         button.onclick = () => {
-            toggleReservationsPage();
+            togglePage(Reservations);
         }
     });
     const locationButtons = document.querySelectorAll('[data-go-to-location]');
     locationButtons.forEach(button => {
         button.onclick = () => {
-            toggleLocationPage();
+            togglePage(Location);
         }
-    })
+    });
+    
+    const mobileMenu = document.querySelector('.right-modal');
+    mobileMenu.onclick = () => {
+        mobileMenu.querySelector('.circle').classList.toggle('close');
+        mobileMenu.classList.toggle('on-left');
+        document.querySelector('.modal-nav').classList.toggle('visible');
+        document.querySelector('.left-modal').classList.toggle('on-right');
+    }
 }
 
 
-toggleMainPage();
+togglePage(Chef);
