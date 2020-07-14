@@ -2,6 +2,9 @@
 
 * {
     font-family: 'Roboto Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -606,6 +609,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 #noodles-image, #spread-noodles, #cooking-noodles {
     margin-top: 110px;
     width: 90%;
@@ -622,11 +626,57 @@ body {
     margin-top: 110px;
 }
 
-.left-side {
+ .slide-show {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 40px;
+}
+
+.slides {
     display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slides > img {
+    width: 100%;
+}
+
+#first, #firstClone {
+    width: 800px;
+}
+
+
+#prev-button {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 0;
+    font-size: 20px;
+    padding: 5px;
+    z-index: 10;
+    background-color: #e3e1dc;
+}
+
+#next-button {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    right: 0;
+    font-size: 20px;
+    padding: 5px;
+    z-index: 10;
+    background-color: #e3e1dc;
+}
+
+
+.left-side {
     flex-direction: column;
     align-items: center;
 }
+
 
 .left-side > h4{
     font-size: 18px;
@@ -673,9 +723,7 @@ body {
     width: 100%;
 }
 @media only screen and (max-width: 640px){
-    * {
-        overflow-x: hidden;
-    }
+
     body {
         margin: 0;
         padding: 0;
@@ -793,6 +841,6 @@ body {
 
 @media only screen and (max-width: 400px){
     #content {
-        width: 375px;
+        width: 100%;
     }
 }
