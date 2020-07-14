@@ -69,4 +69,4 @@ const addEventListeners = () => {
 }
 
 
-togglePage(Chef);
+togglePage(Home);
