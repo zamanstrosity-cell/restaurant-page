@@ -42,18 +42,27 @@ const Chef = () => {
             During his eighth year at Chotto Kai, he befriended ramen shop owner Rei Fukui. Chef Sakamoto had stopped by her front stall for a quick dinner and fell instantly in love with her take on the springy yet soft noodle. Every ingredient was meticulously prepared, just like each kaiseki course.
         </p>
     </div>
-</div>
-        <div class="slide-show">
-            <span id="prev-button"><i class="fas fa-arrow-left"></i></span>
-            <span id="next-button"><i class="fas fa-arrow-right"></i></span>
-            <div class="slides">
-                <img src="./assets/slide4.jpg" class="image" alt="" id="lastClone" >
-                <img src="./assets/slide1.jpg" class="image" alt="" id="first">
-                <img src="./assets/slide2.jpg" class="image" alt="" id="second">
-                <img src="./assets/slide3.jpg" class="image" alt="" id="third">
-                <img src="./assets/slide4.jpg" class="image" alt="" id="fourth">
-                <img src="./assets/slide1.jpg" class="image" alt="" id="firstClone">
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="./assets/slide1.jpg" class="d-block w-100" alt="">
             </div>
+            <div class="carousel-item">
+            <img src="./assets/slide2.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+            <img src="./assets/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
         </div>
         <div class="row">
             <div class="col-lg-6 col-sm-12 left-side" id="a-new-challenge">
